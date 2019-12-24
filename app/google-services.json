@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1085911875435",
+    "firebase_url": "https://longer-29324.firebaseio.com",
+    "project_id": "longer-29324",
+    "storage_bucket": "longer-29324.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085911875435:android:c8535c590137560f08d62e",
+        "android_client_info": {
+          "package_name": "com.longercave.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085911875435-cfsf6e5kjt4veq9d7ad5e5o1aolsmad8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjwUNuEkbup7jrgBUyuubvaBBsS1FZu7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085911875435-cfsf6e5kjt4veq9d7ad5e5o1aolsmad8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

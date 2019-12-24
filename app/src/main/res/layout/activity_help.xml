@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context="com.longercave.app.Activities.ActivityHelp">
+
+    <LinearLayout
+        android:id="@+id/lnrTitle"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/text_color_white"
+        android:elevation="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:src="@drawable/back_drawable" />
+
+        <com.longercave.app.Utils.MyBoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/help"
+            android:textColor="@color/black_text_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <com.longercave.app.Utils.MyBoldTextView
+        android:id="@+id/title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_20sdp"
+        android:layout_below="@+id/lnrTitle"
+        android:text="@string/help_title"
+        android:textColor="@color/black_text_color"/>
+
+
+    <ImageView
+        android:id="@+id/img_executive"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title_txt"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/help_executive" />
+
+
+    <LinearLayout
+        android:id="@+id/lnrIcons"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/img_executive"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/img_phone"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/img_mail"
+        android:src="@drawable/help_call"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img_mail"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:src="@drawable/help_mail" />
+
+    <ImageView
+        android:id="@+id/img_web"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/img_mail"
+        android:src="@drawable/help_web" />
+    </LinearLayout>
+    <com.longercave.app.Utils.MyBoldTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnrIcons"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:gravity="center"
+        android:text="@string/help_msg"
+        android:lineSpacingMultiplier="1.2"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"/>
+
+</RelativeLayout>

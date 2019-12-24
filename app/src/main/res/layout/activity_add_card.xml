@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.longercave.app.Activities.AddCard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/text_color_white"
+        android:elevation="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:src="@drawable/back_drawable" />
+
+        <com.longercave.app.Utils.MyBoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/add_payments"
+            android:textColor="@color/black_text_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <com.braintreepayments.cardform.view.CardForm
+        android:id="@+id/card_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:theme="@style/NavigationDrawerStyle" />
+
+    <com.longercave.app.Utils.MyButton
+        android:id="@+id/addCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/add"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <!--<ScrollView-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="10dp"-->
+    <!--android:layout_marginTop="30dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:text="@string/card_number"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:textSize="16sp"-->
+    <!--android:padding="10dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--/>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginEnd="20dp"-->
+    <!--android:orientation="horizontal">-->
+    <!--<ImageView-->
+    <!--android:src="@drawable/credit_card"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:padding="5dp"/>-->
+    <!--<EditText-->
+    <!--android:id="@+id/cardNumber"-->
+    <!--android:inputType="number"-->
+    <!--android:hint="@string/sample_card_no"-->
+    <!--android:textSize="14sp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="5dp"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginEnd="20dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:orientation="horizontal">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:orientation="horizontal">-->
+    <!--<EditText-->
+    <!--android:id="@+id/monthAndyear"-->
+    <!--android:hint="@string/month_and_year"-->
+    <!--android:inputType="number"-->
+    <!--android:textSize="14sp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="5dp"/>-->
+    <!--<ImageView-->
+    <!--android:id="@+id/help_month_and_year"-->
+    <!--app:srcCompat="@drawable/information_outline"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:padding="5dp"/>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/cvv"-->
+    <!--android:hint="@string/cvv"-->
+    <!--android:textSize="14sp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="5dp"/>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/help_cvv"-->
+    <!--app:srcCompat="@drawable/information_outline"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:padding="5dp"/>-->
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<Button-->
+    <!--android:text="@string/add"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:background="@android:color/black"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginStart="10dp"-->
+    <!--android:layout_marginEnd="30dp"/>-->
+
+    <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+</LinearLayout>

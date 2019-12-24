@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/longer"
+    tools:context=".Activities.SplashScreen">
+
+    <com.longercave.app.Utils.MyTextView
+        android:id="@+id/lblVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/_12sdp"/>
+
+</RelativeLayout>
